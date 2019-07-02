@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class SubtractionCalculator {
 
+
+
+
     public void displaySubtraction(){
 
         Scanner in = new Scanner(System.in);
@@ -22,11 +25,20 @@ public class SubtractionCalculator {
         System.out.println("Your subtraction is: " + subtraction);
 
     }
+    public void displaySubtraction(int a , int b){
+
+        int subtraction = a-b;
+        System.out.println("Subtraction result is: " + subtraction);
+
+    }
+
+
 
     public static void main(String[] args) {
 
         SubtractionCalculator subtractionCalculator = new SubtractionCalculator();
         subtractionCalculator.displaySubtraction();
+        subtractionCalculator.displaySubtraction(10,3);
 
     }
 

@@ -18,15 +18,20 @@ public class SumCalculator {
 
         }
         System.out.println("Your sum is: " + sum);
+    }
 
+    public void  displaySum(int a, int b){
 
+        int sum  = a + b;
+        System.out.println("Your sum is: " + sum);
 
-        }
+    }
 
     public static void main(String[] args) {
 
         SumCalculator sumCalculator = new SumCalculator();
         sumCalculator.displaySum();
+        sumCalculator.displaySum(10,5);
 
     }
 

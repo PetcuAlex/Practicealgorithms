@@ -26,11 +26,18 @@ public class AverageCalculator {
 
 
     }
+    public void displayAverage(int a ,int b , int c){
+
+        int average = (a + b + c) / 3;
+        System.out.println("Yout average is: " + average);
+
+    }
 
     public static void main(String[] args) {
 
         AverageCalculator averageCalculator = new AverageCalculator();
         averageCalculator.displayAverage();
+        averageCalculator.displayAverage(1,2,3);
 
     }
 }

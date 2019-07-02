@@ -19,7 +19,14 @@ public class DivisionCalculator {
             divison = divison / number;
 
         }
-        System.out.println("Your subtraction is: " + divison);
+        System.out.println("Your division is: " + divison);
+
+    }
+
+    public void displayDivison(int a , int b){
+
+        int division = a / b;
+        System.out.println("Yout result is: " + division);
 
     }
 
@@ -27,6 +34,7 @@ public class DivisionCalculator {
 
         DivisionCalculator divisionCalculator = new DivisionCalculator();
         divisionCalculator.displaySubtraction();
+        divisionCalculator.displayDivison(10,2);
 
     }
 

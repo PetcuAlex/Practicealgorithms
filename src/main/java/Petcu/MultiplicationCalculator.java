@@ -20,7 +20,11 @@ public class MultiplicationCalculator {
         }
         System.out.println("Your multiplication is: " + multiplication);
 
+    }
+    public void  displayMultiplication(int a, int b){
 
+        int multiplication = a * b;
+        System.out.println("Your result is: " + multiplication);
 
     }
 
@@ -28,6 +32,7 @@ public class MultiplicationCalculator {
 
         MultiplicationCalculator multiplicationCalculator = new MultiplicationCalculator();
         multiplicationCalculator.displayMultiplication();
+        multiplicationCalculator.displayMultiplication(10,3);
 
     }
 }
