@@ -113,13 +113,13 @@ public class LogicalOp {
     public static void main(String[] args) {
 
         LogicalOp logicalOp = new LogicalOp();
-        //logicalOp.showNumbers();
-        //logicalOp.countNumbers();
-        //logicalOp.numbersBetween();
-        //logicalOp.evenNumbers();
-        //logicalOp.oddNumbers();
-       // logicalOp.sumNumbers();
-        //logicalOp.averageNumbers();
+        logicalOp.showNumbers();
+        logicalOp.countNumbers();
+        logicalOp.numbersBetween();
+        logicalOp.evenNumbers();
+        logicalOp.oddNumbers();
+        logicalOp.sumNumbers();
+        logicalOp.averageNumbers();
         logicalOp.showPattern();
     }
 }
