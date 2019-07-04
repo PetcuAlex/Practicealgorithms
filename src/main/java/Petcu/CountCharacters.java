@@ -13,10 +13,6 @@ public class CountCharacters {
     }
 
 
-
-
-
-
     public static void main(String[] args) {
         CountCharacters countCharacters = new CountCharacters();
         countCharacters.countCharacters();

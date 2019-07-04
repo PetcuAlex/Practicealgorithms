@@ -4,13 +4,36 @@ import java.util.Scanner;
 
 public class PizzaParty {
 
-    private  void numberSlices(){
+    private void numberSlices() {
 
         Scanner in = new Scanner(System.in);
-        System.out.println("How many people?");
-        int people = in.nextInt();
-        System.out.println("How many pizzas?");
-        int pizzas = in.nextInt();
+        boolean validate;
+        int people = 0;
+        int pizzas = 0;
+        do {
+            System.out.println("How many people?");
+            if (in.hasNextInt()) {
+                people = in.nextInt();
+                validate = true;
+            } else {
+                System.out.println("Enter a whole number");
+                validate = false;
+                in.next();
+            }
+        } while (!(validate));
+
+
+        do {
+            System.out.println("How many pizzas?");
+            if (in.hasNextInt()) {
+                pizzas = in.nextInt();
+                validate = true;
+            } else {
+                System.out.println("Please enter a whole number!");
+                validate = false;
+                in.next();
+            }
+        } while (!(validate));
         int slices = pizzas * 8;
         System.out.println("There are " + people + " people with " + pizzas + " pizzas.");
         int pieces = slices / people;
@@ -18,9 +41,7 @@ public class PizzaParty {
         int leftPieces = slices - pieces * people;
         System.out.println("There are " + leftPieces + " leftover pieces.");
 
-
     }
-
 
 
     public static void main(String[] args) {
