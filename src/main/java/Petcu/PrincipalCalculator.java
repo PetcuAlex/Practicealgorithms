@@ -2,7 +2,7 @@ package Petcu;
 
 import java.util.Scanner;
 
-public class CalculateInterest {
+public class PrincipalCalculator {
 
     private void calculateInterest() {
         Scanner in = new Scanner(System.in);
@@ -20,7 +20,7 @@ public class CalculateInterest {
 
 
     public static void main(String[] args) {
-        CalculateInterest calculateInterest = new CalculateInterest();
+        PrincipalCalculator calculateInterest = new PrincipalCalculator();
         calculateInterest.calculateInterest();
     }
 }
