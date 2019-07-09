@@ -11,7 +11,6 @@ public class ArrayChecker {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter length of array:");
         int size = in.nextInt();
-        boolean validate;
         int[] numbers = new int[size];
         for (int i = 0; i < numbers.length; i++) {
             System.out.println("Enter a number:");
@@ -21,17 +20,10 @@ public class ArrayChecker {
         for (int j = 0; j < numbers.length - 1; j++) {
             for (int k = j + 1; k < numbers.length; k++) {
                 if ((numbers[j] == numbers[k]) && (j != k)) {
-                    int duplicate = numbers[k];
                     System.out.println("Dublicate elements: " + numbers[k]);
-                    validate = true;
-                } else {
-                    validate = false;
-                }
 
+                }
             }
-        }
-        if (validate = false) {
-            System.out.println("There are no duplicates in your array.");
 
         }
     }
@@ -57,13 +49,13 @@ public class ArrayChecker {
 
         }
 
-        HashSet<String> set = new HashSet<String>();
+        HashSet<String> set = new HashSet<>();
 
-        for (int k = 0; k < number.length; k++) {
-            for (int j = 0; j < number2.length; j++) {
-                if (number[k].equals(number2[j])) {
+        for (String s : number) {
+            for (String value : number2) {
+                if (s.equals(value)) {
 
-                    set.add(number[k]);
+                    set.add(s);
                 }
 
             }
